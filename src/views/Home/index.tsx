@@ -1,4 +1,5 @@
 import Layout from '../../components/HOC/Layout';
+import KalkulatorView from './KalkulatorView';
 
 interface propsi {
   props: any;
@@ -7,7 +8,16 @@ interface propsi {
 const Home: React.FC<propsi> = (props) => {
   return (
     <Layout>
-      <div></div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: "column"
+        }}
+      >
+          <KalkulatorView />
+      </div>
     </Layout>
   );
 };

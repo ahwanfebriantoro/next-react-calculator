@@ -1,0 +1,38 @@
+@import '../../utilities/sass-scss/color.scss';
+
+$padding: 20px;
+
+.baseContainer {
+  background-color: $wheat;
+  border-radius: 10px;
+  margin-top: 20px;
+  min-width: 80vh;
+  padding: $padding;
+  font-size: 24px;
+
+  .headSection {
+    flex-direction: column;
+    input {
+      width: 100%;
+      display: block;
+      min-height: 40px;
+      margin: 5px 0;
+      border-radius: 2%;
+      border: none;
+      font-size: inherit;
+      padding: $padding;
+    }
+  }
+
+  .bodySection {
+    .inputButton {
+      background-color: $white;
+      padding: $padding;
+      text-align: center;
+    }
+    .inputButton:hover {
+      cursor: url('/icons/touch-cursor.png') 10 10, auto;
+      filter: brightness(90%);
+    }
+  }
+}
